@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="24" fill="#e8f0fe"/>
+  <text x="24" y="22" font-family="system-ui,sans-serif" font-size="8" font-weight="800" fill="#1a73e8" text-anchor="middle">DATA</text>
+  <text x="24" y="34" font-family="system-ui,sans-serif" font-size="8" font-weight="800" fill="#1a73e8" text-anchor="middle">TECH</text>
+</svg>

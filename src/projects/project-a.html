@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project Title — Case study by Iuliia" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Project Title — Iuliia</title>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav__logo" aria-label="Back to portfolio">← IU</a>
+      <div class="nav__controls">
+        <button class="btn-icon" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-label">EN</span>
+        </button>
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <article class="section case-study">
+
+      <header class="case-study__header">
+        <h1 class="case-study__title">Project Title</h1>
+        <dl class="case-study__meta">
+          <dt>Role</dt>     <dd>Frontend Developer</dd>
+          <dt>Company</dt>  <dd>Company Name</dd>
+          <dt>Dates</dt>    <dd>2022 – 2023</dd>
+        </dl>
+      </header>
+
+      <section class="case-study__section">
+        <h2>Problem / Context</h2>
+        <p>Describe the problem that needed solving and the context around it.</p>
+      </section>
+
+      <section class="case-study__section">
+        <h2>What I did</h2>
+        <p>Key responsibilities, approach, and decisions made during the project.</p>
+      </section>
+
+      <section class="case-study__section">
+        <h2>Screenshots</h2>
+        <figure>
+          <img
+            src="/src/assets/img/projects/placeholder.png"
+            alt="Project screenshot"
+            loading="lazy"
+          />
+          <figcaption>Caption describing the screenshot.</figcaption>
+        </figure>
+      </section>
+
+      <section class="case-study__section">
+        <h2>Tech stack</h2>
+        <ul class="about__stack" role="list">
+          <li>React</li>
+          <li>TypeScript</li>
+        </ul>
+      </section>
+
+      <section class="case-study__section">
+        <h2>Outcome</h2>
+        <p>Qualitative results and metrics where available.</p>
+      </section>
+
+      <a href="/" class="btn btn--secondary" style="margin-top: 1rem;">← Back to portfolio</a>
+
+    </article>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>&copy; <span id="footer-year"></span> Iuliia.</p>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

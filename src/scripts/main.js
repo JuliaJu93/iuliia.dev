@@ -1,0 +1,47 @@
+import { initTheme }   from './theme.js'
+import { initI18n }    from './i18n.js'
+
+// Run before DOMContentLoaded to prevent theme flash
+initTheme()
+
+document.addEventListener('DOMContentLoaded', () => {
+  initI18n()
+  initScrollReveal()
+  initCaseStudyToggles()
+
+  const yearEl = document.getElementById('footer-year')
+  if (yearEl) yearEl.textContent = new Date().getFullYear()
+})
+
+function initCaseStudyToggles() {
+  document.querySelectorAll('.case-study-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.dataset.target
+      const panel = targetId ? document.getElementById(targetId) : null
+      if (!panel) return
+
+      const isOpen = !panel.hidden
+      panel.hidden = isOpen
+      btn.setAttribute('aria-expanded', String(!isOpen))
+    })
+  })
+}
+
+function initScrollReveal() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible')
+        observer.unobserve(entry.target)
+      }
+    }),
+    { threshold: 0.1 }
+  )
+
+  document.querySelectorAll('.section > *').forEach(el => {
+    el.classList.add('fade-in')
+    observer.observe(el)
+  })
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Iuliia Iusupova — Frontend Developer portfolio. Scalable UIs for complex web apps." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Iuliia Iusupova — Frontend Developer" />
+  <meta property="og:description" content="Frontend developer with 5+ years of experience building scalable UIs for complex web apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iuliia.dev" />
+  <meta property="og:image" content="https://iuliia.dev/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Iuliia Iusupova — Frontend Developer" />
+  <meta name="twitter:description" content="Frontend developer with 5+ years of experience." />
+  <meta name="twitter:image" content="https://iuliia.dev/og-image.png" />
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://iuliia.dev/?lang=en" />
+  <link rel="alternate" hreflang="ru" href="https://iuliia.dev/?lang=ru" />
+  <link rel="alternate" hreflang="x-default" href="https://iuliia.dev/" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Iuliia Iusupova — Frontend Developer</title>
+
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+
+  <!-- ─── Header ──────────────────────────────────────────── -->
+  <header class="header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about"      data-i18n="nav.about">About</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      </ul>
+
+      <div class="nav__controls">
+        <button class="btn-icon" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-label">EN</span>
+        </button>
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme">
+          <!-- Icon injected by theme.js -->
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── Hero ────────────────────────────────────────────── -->
+    <section id="hero" class="section hero">
+      <div class="hero__photo">
+        <img
+          src="/src/assets/img/photo.jpg"
+          alt="Photo of Iuliia Iusupova"
+          width="180" height="180"
+        />
+      </div>
+      <div class="hero__content">
+        <h1 class="hero__name">Iusupova Iuliia</h1>
+        <p class="hero__role" data-i18n="hero.role">Frontend engineer</p>
+        <p class="hero__exp" data-i18n="hero.experience">5+ years of experience</p>
+        <p class="hero__tagline" data-i18n="hero.tagline">Building scalable UIs for complex web apps</p>
+      </div>
+    </section>
+
+    <!-- ─── About ────────────────────────────────────────────── -->
+    <section id="about" class="section about">
+      <h2 class="section__title" data-i18n="about.title">About me</h2>
+      <div class="about__content">
+
+        <div class="about__text-col">
+          <p class="about__bio" data-i18n="about.bio.1">
+            Frontend developer with 5 years of experience. I've worked both solo and in teams, and I tend to care about the details that often get skipped — clean code, interactions that feel natural, interfaces that don't frustrate people.
+          </p>
+          <p class="about__bio" data-i18n="about.bio.2">
+            Worked on a range of projects, from being the only frontend dev to collaborating in teams of up to 8 people.
+          </p>
+          <p class="about__bio" data-i18n="about.bio.3">
+            Cursor, Claude Code — daily use; I know where they help and where they get in the way.
+          </p>
+
+          <div class="about__subsection">
+            <h3 class="about__subsection-title" data-i18n="about.education.title">Education</h3>
+            <p class="about__detail-item">
+              <strong>Penza State University</strong><br />
+              <span data-i18n="about.education.degree">Specialist, Medical Cybernetics</span><br />
+              <span class="about__detail-date">Sep 2012 – Jul 2019</span>
+            </p>
+          </div>
+
+          <div class="about__subsection">
+            <h3 class="about__subsection-title" data-i18n="about.cert.title">Certification</h3>
+            <p class="about__detail-item">
+              <a
+                href="https://cert.efset.org/UqjqDc"
+                class="about__cert-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >EF SET English Certificate 59/100 (B2 Upper Intermediate)</a><br />
+              <span class="about__detail-date" data-i18n="about.cert.issued">Issued Feb 2026</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="about__video-col">
+          <div class="video-section__player">
+            <p class="video-section__placeholder" data-i18n="video.placeholder">Video coming soon</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── Experience ───────────────────────────────────────── -->
+    <section id="experience" class="section experience">
+      <h2 class="section__title" data-i18n="experience.title">Work experience</h2>
+      <div class="experience__list">
+
+        <!-- Optimacros -->
+        <article class="card experience__card">
+          <div class="card__body">
+            <h3 class="card__role" data-i18n="experience.optimacros.role">React Developer</h3>
+            <p class="card__company">
+              <a href="http://optimacros.com/" class="card__company-link" target="_blank" rel="noopener noreferrer">Optimacros</a>
+              · Full-time
+            </p>
+            <p class="card__meta">Sep 2024 – Mar 2026 · 1 yr 7 mos · Moscow, Remote</p>
+            <ul class="card__bullets">
+              <li>Development of an integrated system for planning, budgeting, forecasting, and business analysis.</li>
+              <li>Developed a UI-kit: migrated components to zag-js, configured Biome linter, set up Storybook, documented components.</li>
+              <li>Wrote adapter components for smooth transition to new components.</li>
+              <li>Improved build performance — bundle size reduced by 40%, migrated linting from ESLint to Biome.</li>
+            </ul>
+            <ul class="card__tech" role="list">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Zag-js</li>
+              <li>Biome</li>
+              <li>Storybook</li>
+            </ul>
+            <button
+              class="case-study-toggle"
+              aria-expanded="false"
+              aria-controls="cs-optimacros"
+              data-target="cs-optimacros"
+            >
+              <span data-i18n="experience.caseStudy">View case study →</span>
+            </button>
+          </div>
+          <div class="case-study" id="cs-optimacros" hidden>
+            <img
+              src="/src/assets/img/projects/optimacros.jpg"
+              alt="Optimacros project screenshot"
+              class="case-study__img"
+              loading="lazy"
+            />
+          </div>
+        </article>
+
+        <!-- Datatech Labs -->
+        <article class="card experience__card">
+          <div class="card__body">
+            <h3 class="card__role" data-i18n="experience.datatech.role">React Developer</h3>
+            <p class="card__company">
+              <a href="https://datalabs.ae/" class="card__company-link" target="_blank" rel="noopener noreferrer">Datatech Labs Middle East</a>
+              · Full-time
+            </p>
+            <p class="card__meta">Apr 2023 – May 2024 · 1 yr 2 mos · Dubai, UAE, Remote</p>
+            <ul class="card__bullets">
+              <li>Built a document management system for lawyers and accountants from scratch — sole frontend developer, responsible for architecture and implementation.</li>
+              <li>Designed the frontend architecture independently, from initial setup to production.</li>
+              <li>Built a UX-focused interface with authentication, role-based access, and multilingual support (EN / RU / AR).</li>
+              <li>Wrote unit tests across the codebase to ensure reliability and maintainability.</li>
+            </ul>
+            <ul class="card__tech" role="list">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Vite</li>
+              <li>Jest</li>
+            </ul>
+            <button
+              class="case-study-toggle"
+              aria-expanded="false"
+              aria-controls="cs-datatech"
+              data-target="cs-datatech"
+            >
+              <span data-i18n="experience.caseStudy">View case study →</span>
+            </button>
+          </div>
+          <div class="case-study" id="cs-datatech" hidden>
+            <img
+              src="/src/assets/img/projects/datatech.jpg"
+              alt="Datatech Labs project screenshot"
+              class="case-study__img"
+              loading="lazy"
+            />
+          </div>
+        </article>
+
+        <!-- ZenCode -->
+        <article class="card experience__card">
+          <div class="card__body">
+            <h3 class="card__role" data-i18n="experience.zencode.role">React Developer</h3>
+            <p class="card__company">
+              <a href="https://zencode.team/" class="card__company-link" target="_blank" rel="noopener noreferrer">ZenCode</a>
+              · Full-time
+            </p>
+            <p class="card__meta">Oct 2020 – Apr 2023 · 2 yrs 7 mos · Penza, Russia, Remote</p>
+            <ul class="card__bullets">
+              <li>Developed a large MES system for managing production processes in the gold mining industry.</li>
+              <li>Wrote the administration section of the application from scratch.</li>
+              <li>Created a custom UI component library (Storybook), migrated from Rollup to Webpack, migrated tables from AntD to DevExtreme.</li>
+              <li>Optimized application performance, including identifying causes of table data rendering delays.</li>
+            </ul>
+            <ul class="card__tech" role="list">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Webpack</li>
+              <li>Storybook</li>
+              <li>DevExtreme</li>
+            </ul>
+            <button
+              class="case-study-toggle"
+              aria-expanded="false"
+              aria-controls="cs-zencode"
+              data-target="cs-zencode"
+            >
+              <span data-i18n="experience.caseStudy">View case study →</span>
+            </button>
+          </div>
+          <div class="case-study" id="cs-zencode" hidden>
+            <img
+              src="/src/assets/img/projects/zencode.jpg"
+              alt="ZenCode project screenshot"
+              class="case-study__img"
+              loading="lazy"
+            />
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ──────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__links">
+      <a href="mailto:kashlewa.ju@gmail.com">kashlewa.ju@gmail.com</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://linkedin.com/in/iuliia-iusupova" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/JuliaJu93" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+    <p class="footer__copy">
+      &copy; <span id="footer-year"></span> Iuliia Iusupova
+    </p>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
