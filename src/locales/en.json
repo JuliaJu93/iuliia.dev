@@ -31,10 +31,41 @@
   },
   "experience": {
     "title": "Work experience",
+    "type": "Full-time",
     "caseStudy": "View case study →",
-    "optimacros": { "role": "React Developer" },
-    "datatech": { "role": "React Developer" },
-    "zencode": { "role": "React Developer" }
+    "optimacros": {
+      "role": "React Developer",
+      "duration": "1 yr 7 mos",
+      "location": "Moscow, Remote",
+      "bullets": {
+        "1": "Development of an integrated system for planning, budgeting, forecasting, and business analysis.",
+        "2": "Developed a UI-kit: migrated components to zag-js, configured Biome linter, set up Storybook, documented components.",
+        "3": "Wrote adapter components for smooth transition to new components.",
+        "4": "Improved build performance — bundle size reduced by 40%, migrated linting from ESLint to Biome."
+      }
+    },
+    "datatech": {
+      "role": "React Developer",
+      "duration": "1 yr 2 mos",
+      "location": "Dubai, UAE, Remote",
+      "bullets": {
+        "1": "Built a document management system for lawyers and accountants from scratch — sole frontend developer, responsible for architecture and implementation.",
+        "2": "Designed the frontend architecture independently, from initial setup to production.",
+        "3": "Built a UX-focused interface with authentication, role-based access, and multilingual support (EN / RU / AR).",
+        "4": "Wrote unit tests across the codebase to ensure reliability and maintainability."
+      }
+    },
+    "zencode": {
+      "role": "React Developer",
+      "duration": "2 yrs 7 mos",
+      "location": "Penza, Russia, Remote",
+      "bullets": {
+        "1": "Developed a large MES system for managing production processes in the gold mining industry.",
+        "2": "Wrote the administration section of the application from scratch.",
+        "3": "Created a custom UI component library (Storybook), migrated from Rollup to Webpack, migrated tables from AntD to DevExtreme.",
+        "4": "Optimized application performance, including identifying causes of table data rendering delays."
+      }
+    }
   },
   "contact": {
     "title": "Get in touch"

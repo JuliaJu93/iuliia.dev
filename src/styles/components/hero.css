@@ -42,6 +42,29 @@
   line-height: 1.6;
 }
 
+.hero__contacts {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.hero__contacts a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.hero__contacts a:hover {
+  color: var(--color-accent);
+}
+
+.hero__contacts span {
+  color: var(--color-border);
+}
+
 @media (max-width: 540px) {
   .hero {
     grid-template-columns: 1fr;
