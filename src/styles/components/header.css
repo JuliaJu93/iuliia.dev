@@ -20,7 +20,7 @@
   display: flex;
   list-style: none;
   gap: 2rem;
-  flex: 1;
+  margin-inline-start: auto;
 }
 
 .nav__links a {
