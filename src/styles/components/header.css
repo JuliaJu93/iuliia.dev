@@ -11,9 +11,14 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1rem clamp(1.5rem, 5vw, 8rem);
-  max-width: 1200px;
-  margin-inline: auto;
+  padding: 1rem clamp(3rem, 10vw, 12rem);
+}
+
+.nav__logo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
 }
 
 .nav__links {
