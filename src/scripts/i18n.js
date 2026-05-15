@@ -26,7 +26,7 @@ async function loadTranslations(lang) {
   currentLang = lang
   document.documentElement.lang = lang
   const label = document.querySelector('#lang-toggle .lang-label')
-  if (label) label.textContent = lang.toUpperCase()
+  if (label) label.textContent = lang
 }
 
 function applyTranslations() {

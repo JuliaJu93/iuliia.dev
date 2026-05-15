@@ -5,6 +5,7 @@
     "contact": "Contacts"
   },
   "hero": {
+    "name": "Iusupova Iuliia",
     "role": "Frontend engineer",
     "experience": "5+ years of experience",
     "tagline": "Building scalable UIs for complex web apps"
@@ -60,14 +61,27 @@
       "location": "Penza, Russia, Remote",
       "bullets": {
         "1": "Developed a large MES system for managing production processes in the gold mining industry.",
-        "2": "Wrote the administration section of the application from scratch.",
+        "2": "Built the administration section of the application from scratch.",
         "3": "Created a custom UI component library (Storybook), migrated from Rollup to Webpack, migrated tables from AntD to DevExtreme.",
         "4": "Optimized application performance, including identifying causes of table data rendering delays."
+      },
+      "cs": {
+        "desc": "Participation in the development of projects for a gold mining company\nTools for enterprise process integration: manufacturing execution system modules that ensure control over production order fulfillment, resource consumption tracking, as well as analysis of equipment efficiency and utilization.",
+        "desc2": "Actively participated in internal company events: tech meetups, knowledge-sharing sessions, and team activities.",
+        "siteLink": "Go to the company site",
+        "projectTitle": "Project group for a gold mining company",
+        "techStack": "TypeScript / React.JS / ES6 / JsDoc / Webpack / Eslint / Css Modules / Ant Design / DevExtreme / MobX / Redux / Storybook / Figma",
+        "person": "Alexander Nechai",
+        "personRole": "Head of RCBI Development Department",
+        "quote": "\"We have been cooperating with ZenCode for more than 4 years within the scope of activities for the development and advancement of our own MES solution, as well as its implementation at metallurgical industry enterprises. Together with colleagues, we have gone from creating an MVP to signing acceptance certificates with satisfied Clients. Along this journey, we achieved the highest level of integration and mutual understanding at the level of processes and teams. Throughout all this time, ZenCode has proven to be a reliable, engaged, and results-driven partner you can count on.\""
       }
     }
   },
   "contact": {
     "title": "Get in touch"
+  },
+  "site": {
+    "name": "Iuliia Iusupova"
   },
   "footer": {
     "built": "Built by Iuliia"

@@ -34,7 +34,7 @@
   <header class="header" role="banner">
     <nav class="nav" aria-label="Main navigation">
 
-      <span class="nav__logo">Iuliia Iusupova</span>
+      <span class="nav__logo" data-i18n="site.name">Iuliia Iusupova</span>
 
       <ul class="nav__links" role="list">
         <li><a href="#about"      data-i18n="nav.about">About</a></li>
@@ -66,7 +66,7 @@
           />
         </div>
         <div class="hero__content">
-          <h1 class="hero__name">Iusupova Iuliia</h1>
+          <h1 class="hero__name" data-i18n="hero.name">Iusupova Iuliia</h1>
           <p class="hero__role" data-i18n="hero.role">Frontend engineer</p>
           <p class="hero__exp" data-i18n="hero.experience">5+ years of experience</p>
           <div class="hero__contacts">
@@ -223,17 +223,24 @@
             </p>
             <p class="card__meta">Oct 2020 – Apr 2023 · <span data-i18n="experience.zencode.duration">2 yrs 7 mos</span> · <span data-i18n="experience.zencode.location">Penza, Russia, Remote</span></p>
             <ul class="card__bullets">
-              <li data-i18n="experience.zencode.bullets.1">Developed a large MES system for managing production processes in the gold mining industry.</li>
               <li data-i18n="experience.zencode.bullets.2">Wrote the administration section of the application from scratch.</li>
               <li data-i18n="experience.zencode.bullets.3">Created a custom UI component library (Storybook), migrated from Rollup to Webpack, migrated tables from AntD to DevExtreme.</li>
               <li data-i18n="experience.zencode.bullets.4">Optimized application performance, including identifying causes of table data rendering delays.</li>
             </ul>
             <ul class="card__tech" role="list">
               <li>TypeScript</li>
-              <li>React</li>
+              <li>React.JS</li>
+              <li>ES6</li>
+              <li>JsDoc</li>
               <li>Webpack</li>
+              <li>ESLint</li>
+              <li>Figma</li>
+              <li>MobX</li>
               <li>Storybook</li>
+              <li>CSS Modules</li>
+              <li>Ant Design</li>
               <li>DevExtreme</li>
+              <li>Redux</li>
             </ul>
             <button
               class="case-study-toggle"
@@ -245,12 +252,62 @@
             </button>
           </div>
           <div class="case-study" id="cs-zencode" hidden>
-            <img
-              src="/src/assets/img/projects/zencode.jpg"
-              alt="ZenCode project screenshot"
-              class="case-study__img"
-              loading="lazy"
-            />
+            <div class="carousel cs-carousel" id="cs-zencode-carousel">
+              <div class="cs-carousel__viewport">
+                <div class="carousel__track">
+
+                  <!-- Slide 1: description + project card + testimonial side by side -->
+                  <div class="carousel__slide cs-slide" aria-hidden="false">
+                    <p class="cs-desc" data-i18n="experience.zencode.cs.desc">Participation in the development of projects for a gold mining company
+Tools for enterprise process integration: manufacturing execution system modules that ensure control over production order fulfillment, resource consumption tracking, as well as analysis of equipment efficiency and utilization.</p>
+                    <a href="https://zencode.team/" class="cs-site-link" target="_blank" rel="noopener noreferrer">
+                      <span data-i18n="experience.zencode.cs.siteLink">Go to the company site</span> →
+                    </a>
+                    <div class="cs-cards-row">
+                      <div class="cs-project-card">
+                        <svg class="cs-project-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        <h4 class="cs-project-card__title" data-i18n="experience.zencode.cs.projectTitle">Project group for a gold mining company</h4>
+                        <p class="cs-project-card__tech" data-i18n="experience.zencode.cs.techStack">TypeScript / React.JS / ES6 / JsDoc / Webpack / Eslint / Css Modules / Ant Design / DevExtreme / MobX / Redux / Storybook / Figma</p>
+                      </div>
+                      <div class="cs-testimonial">
+                        <div class="cs-testimonial__person">
+                          <div class="cs-testimonial__avatar" aria-hidden="true">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="8" r="4"/>
+                              <path d="M4 20c0-4 3.582-7 8-7s8 3 8 7"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="cs-testimonial__name" data-i18n="experience.zencode.cs.person">Alexander Nechai</p>
+                            <p class="cs-testimonial__role" data-i18n="experience.zencode.cs.personRole">Head of RCBI Development Department</p>
+                          </div>
+                        </div>
+                        <h4 class="cs-testimonial__project" data-i18n="experience.zencode.cs.projectTitle">Project group for a gold mining company</h4>
+                        <blockquote class="cs-testimonial__quote" data-i18n="experience.zencode.cs.quote">"We have been cooperating with ZenCode for more than 4 years…"</blockquote>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Slide 2: description + two team photos side by side -->
+                  <div class="carousel__slide cs-slide" aria-hidden="true">
+                    <p class="cs-desc" data-i18n="experience.zencode.cs.desc2">Actively participated in internal company events: tech meetups, knowledge-sharing sessions, and team activities.</p>
+                    <div class="cs-photos-row">
+                      <img src="/src/assets/img/zencode/zencode-1.jpg" alt="ZenCode tech meetup" class="cs-photo" loading="lazy" />
+                      <img src="/src/assets/img/zencode/zencode-2.jpg" alt="ZenCode team" class="cs-photo" loading="lazy" />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="carousel__controls">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide" disabled>←</button>
+                <div class="carousel__pagination"></div>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next slide">→</button>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -262,7 +319,7 @@
   <!-- ─── Footer ──────────────────────────────────────────────── -->
   <footer class="footer" id="footer" role="contentinfo">
     <div class="footer__inner">
-      <p class="footer__name">Iuliia Iusupova</p>
+      <p class="footer__name" data-i18n="site.name">Iuliia Iusupova</p>
       <div class="footer__contacts">
         <div class="footer__contacts-col">
           <p class="footer__contacts-label" data-i18n="nav.contact">Contacts</p>
@@ -276,7 +333,7 @@
       </div>
     </div>
     <p class="footer__copy">
-      &copy; <span id="footer-year"></span> Iuliia Iusupova
+      &copy; <span id="footer-year"></span> <span data-i18n="site.name">Iuliia Iusupova</span>
     </p>
   </footer>
 

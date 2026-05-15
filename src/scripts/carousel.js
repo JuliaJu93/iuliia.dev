@@ -1,9 +1,10 @@
-export function initCarousel() {
-  const track      = document.getElementById('carousel-track')
-  const pagination = document.getElementById('carousel-pagination')
-  const counter    = document.getElementById('carousel-counter')
-  const prevBtn    = document.querySelector('.carousel__btn--prev')
-  const nextBtn    = document.querySelector('.carousel__btn--next')
+export function initCarousel(container = document) {
+  const root       = container === document ? document : container
+  const track      = root.querySelector('.carousel__track')
+  const pagination = root.querySelector('.carousel__pagination')
+  const counter    = root.querySelector('.carousel__counter')
+  const prevBtn    = root.querySelector('.carousel__btn--prev')
+  const nextBtn    = root.querySelector('.carousel__btn--next')
 
   if (!track) return
 
@@ -52,6 +53,7 @@ export function initCarousel() {
   let isDragging = false
 
   track.addEventListener('pointerdown', e => {
+    if (e.target.closest('a, button')) return
     dragStart = e.clientX
     isDragging = true
     track.setPointerCapture(e.pointerId)

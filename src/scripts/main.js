@@ -1,5 +1,6 @@
-import { initTheme }   from './theme.js'
+import { initTheme }    from './theme.js'
 import { initI18n }    from './i18n.js'
+import { initCarousel } from './carousel.js'
 
 // Run before DOMContentLoaded to prevent theme flash
 initTheme()
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function initCaseStudyToggles() {
+  const carouselsInited = new Set()
+
   document.querySelectorAll('.case-study-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetId = btn.dataset.target
@@ -23,6 +26,14 @@ function initCaseStudyToggles() {
       const isOpen = !panel.hidden
       panel.hidden = isOpen
       btn.setAttribute('aria-expanded', String(!isOpen))
+
+      if (!isOpen && !carouselsInited.has(targetId)) {
+        const carousel = panel.querySelector('.carousel')
+        if (carousel) {
+          carouselsInited.add(targetId)
+          initCarousel(carousel)
+        }
+      }
     })
   })
 }
