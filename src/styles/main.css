@@ -41,7 +41,7 @@ img, video { max-width: 100%; display: block; }
 /* ─── Layout helpers ────────────────────────────────────── */
 
 .section {
-  padding-block: 5rem;
+  padding-block: 3rem;
   padding-inline: clamp(1.5rem, 5vw, 8rem);
   max-width: 1200px;
   margin-inline: auto;
