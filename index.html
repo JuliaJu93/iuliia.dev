@@ -144,7 +144,6 @@
             </p>
             <p class="card__meta">Sep 2024 – Mar 2026 · <span data-i18n="experience.optimacros.duration">1 yr 7 mos</span> · <span data-i18n="experience.optimacros.location">Moscow, Remote</span></p>
             <ul class="card__bullets">
-              <li data-i18n="experience.optimacros.bullets.1">Development of an integrated system for planning, budgeting, forecasting, and business analysis.</li>
               <li data-i18n="experience.optimacros.bullets.2">Developed a UI-kit: migrated components to zag-js, configured Biome linter, set up Storybook, documented components.</li>
               <li data-i18n="experience.optimacros.bullets.3">Wrote adapter components for smooth transition to new components.</li>
               <li data-i18n="experience.optimacros.bullets.4">Improved build performance — bundle size reduced by 40%, migrated linting from ESLint to Biome.</li>
@@ -155,6 +154,8 @@
               <li>Zag-js</li>
               <li>Biome</li>
               <li>Storybook</li>
+              <li>MobX</li>
+              <li>Lerna</li>
             </ul>
             <button
               class="case-study-toggle"
@@ -166,12 +167,44 @@
             </button>
           </div>
           <div class="case-study" id="cs-optimacros" hidden>
-            <img
-              src="/src/assets/img/projects/optimacros.jpg"
-              alt="Optimacros project screenshot"
-              class="case-study__img"
-              loading="lazy"
-            />
+            <div class="carousel cs-carousel" id="cs-optimacros-carousel">
+              <div class="cs-carousel__viewport">
+                <div class="carousel__track">
+
+                  <div class="carousel__slide cs-slide" aria-hidden="false">
+                    <p class="cs-desc" data-i18n="experience.optimacros.cs.desc">Participation in the development of the Optimacros CPM/IBP platform, forming an integrated environment for aligned decision-making, improving the accuracy, transparency, and efficiency of management.</p>
+                    <a href="http://optimacros.com/" class="cs-site-link" target="_blank" rel="noopener noreferrer">
+                      <span data-i18n="experience.optimacros.cs.siteLink">Go to the company site</span> →
+                    </a>
+                    <div class="cs-photos-row">
+                      <img data-i18n-src="experience.optimacros.cs.slide1img" src="/src/assets/img/optimacros/opti-2.png" alt="Optimacros platform" class="cs-photo" loading="lazy" />
+                    </div>
+                  </div>
+
+                  <div class="carousel__slide cs-slide" aria-hidden="true">
+                    <p class="cs-desc" data-i18n="experience.optimacros.cs.desc2">Developed features used by a large user base, including enterprise clients such as Ozon, Sibur, and other major industry leaders.</p>
+                    <div class="cs-photos-row">
+                      <img data-i18n-src="experience.optimacros.cs.slide2img" src="/src/assets/img/optimacros/opti-4.png" alt="Optimacros clients" class="cs-photo" loading="lazy" />
+                    </div>
+                  </div>
+
+                  <div class="carousel__slide cs-slide" aria-hidden="true">
+                    <p class="cs-desc" data-i18n="experience.optimacros.cs.desc3">Optimized the application build, reducing bundle size by nearly 50% — from 240.8 KB down to 122 KB — by removing unused exports and imports, enabling effective tree-shaking of lodash-es (reduced from 82.5 KB to 34.1 KB).
+Migrated linting from ESLint to Biome, achieving a 20x improvement in code check performance.</p>
+                    <div class="cs-photos-row">
+                      <img src="/src/assets/img/optimacros/opti-5.png" alt="Optimacros build optimisation" class="cs-photo" loading="lazy" />
+                      <img src="/src/assets/img/optimacros/opti-6.png" alt="Optimacros linting migration" class="cs-photo" loading="lazy" />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel__controls">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide" disabled>←</button>
+                <div class="carousel__pagination"></div>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next slide">→</button>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -205,12 +238,38 @@
             </button>
           </div>
           <div class="case-study" id="cs-datatech" hidden>
-            <img
-              src="/src/assets/img/projects/datatech.jpg"
-              alt="Datatech Labs project screenshot"
-              class="case-study__img"
-              loading="lazy"
-            />
+            <div class="carousel cs-carousel" id="cs-datatech-carousel">
+              <div class="cs-carousel__viewport">
+                <div class="carousel__track">
+
+                  <div class="carousel__slide cs-slide" aria-hidden="false">
+                    <p class="cs-desc" data-i18n="experience.datatech.cs.desc">Built a document management system for lawyers and accountants from scratch.
+Sole frontend developer — responsible for architecture, authentication, role-based access, and multilingual support (EN / RU / AR).</p>
+                    <a href="https://datalabs.ae/" class="cs-site-link" target="_blank" rel="noopener noreferrer">
+                      <span data-i18n="experience.datatech.cs.siteLink">Go to the company site</span> →
+                    </a>
+                    <div class="cs-photos-row">
+                      <img src="/src/assets/img/datatech/datatech-4.jpg" alt="Datatech document management" class="cs-photo" loading="lazy" />
+                      <img src="/src/assets/img/datatech/datatech-6.jpg" alt="Datatech document management" class="cs-photo" loading="lazy" />
+                    </div>
+                  </div>
+
+                  <div class="carousel__slide cs-slide" aria-hidden="true">
+                    <p class="cs-desc" data-i18n="experience.datatech.cs.desc2">Worked autonomously from schema-based task specifications — independently identified gaps, collected additional context, and drove tasks to completion.</p>
+                    <div class="cs-photos-row">
+                      <img src="/src/assets/img/datatech/datatech-2.jpg" alt="Datatech document management" class="cs-photo" loading="lazy" />
+                      <img src="/src/assets/img/datatech/datatech-3.jpg" alt="Datatech document management" class="cs-photo" loading="lazy" />
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="carousel__controls">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Previous slide" disabled>←</button>
+                <div class="carousel__pagination"></div>
+                <button class="carousel__btn carousel__btn--next" aria-label="Next slide">→</button>
+              </div>
+            </div>
           </div>
         </article>
 

@@ -34,6 +34,10 @@ function applyTranslations() {
     const val = resolve(translations, el.dataset.i18n)
     if (val) el.textContent = val
   })
+  document.querySelectorAll('[data-i18n-src]').forEach(el => {
+    const val = resolve(translations, el.dataset.i18nSrc)
+    if (val) el.src = val
+  })
 }
 
 function resolve(obj, key) {
