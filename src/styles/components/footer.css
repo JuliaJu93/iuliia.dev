@@ -1,32 +1,67 @@
 .footer {
-  border-top: 1px solid var(--color-border);
-  padding: 2rem clamp(1.5rem, 5vw, 8rem);
-  text-align: center;
-  color: var(--color-text-muted);
-  font-size: 0.875rem;
-}
-
-.footer__links {
+  background-color: #1e1e1e;
+  padding: 8rem clamp(3rem, 10vw, 12rem) 3rem;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 420px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.footer__links a {
-  color: var(--color-text-muted);
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.footer__contacts-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.footer__contacts-col + .footer__contacts-col {
+  padding-top: 2.75rem;
+}
+
+.footer__contacts-label {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.footer__contacts-label::after {
+  content: ":";
+}
+
+.footer__contacts a {
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
+  font-size: 0.95rem;
   transition: color 0.15s;
 }
 
-.footer__links a:hover {
-  color: var(--color-accent);
+.footer__contacts a:hover {
+  color: #fff;
 }
 
 .footer__copy {
   font-size: 0.8rem;
-  color: var(--color-text-muted);
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
 }
