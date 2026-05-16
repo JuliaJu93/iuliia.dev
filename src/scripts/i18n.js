@@ -12,12 +12,13 @@ export async function initI18n() {
   await loadTranslations(currentLang)
   applyTranslations()
 
-  document.getElementById('lang-toggle')?.addEventListener('click', async () => {
+  const toggle = document.getElementById('lang-toggle')
+  if (toggle) toggle.onclick = async () => {
     const next = currentLang === 'en' ? 'ru' : 'en'
     localStorage.setItem(STORAGE_KEY, next)
     await loadTranslations(next)
     applyTranslations()
-  })
+  }
 }
 
 async function loadTranslations(lang) {
@@ -26,7 +27,7 @@ async function loadTranslations(lang) {
   currentLang = lang
   document.documentElement.lang = lang
   const label = document.querySelector('#lang-toggle .lang-label')
-  if (label) label.textContent = lang
+  if (label) label.textContent = lang === 'en' ? 'RU' : 'EN'
 }
 
 function applyTranslations() {
