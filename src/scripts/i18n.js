@@ -22,7 +22,7 @@ export async function initI18n() {
 }
 
 async function loadTranslations(lang) {
-  const res = await fetch(`/src/locales/${lang}.json`)
+  const res = await fetch(`/locales/${lang}.json`)
   translations = await res.json()
   currentLang = lang
   document.documentElement.lang = lang

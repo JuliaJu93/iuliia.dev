@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "about": "About",
+    "stack": "Stack",
+    "experience": "Experience",
+    "contact": "Contacts",
+    "cvEn": "CV",
+    "cvRu": "CV RU"
+  },
+  "hero": {
+    "name": "Iusupova Iuliia",
+    "role": "Frontend engineer",
+    "experience": "5+ years of experience",
+    "tagline": "Building scalable UIs for complex web apps"
+  },
+  "about": {
+    "title": "About me",
+    "bio": {
+      "1": "Frontend developer with 5 years of experience.",
+      "2": "Worked on a range of projects, from being the only frontend dev to collaborating in big teams.",
+      "3": "Cursor, Claude Code — daily use; I know where they help and where they get in the way."
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Specialist, Medical Cybernetics"
+    },
+    "cert": {
+      "title": "Certification",
+      "issued": "Issued Feb 2026"
+    }
+  },
+  "stack": {
+    "title": "Tech stack",
+    "core": "Core stack",
+    "state": "State management",
+    "ui": "UI & styling",
+    "tooling": "Tooling",
+    "ai": "AI tools"
+  },
+  "video": {
+    "placeholder": "Video coming soon"
+  },
+  "experience": {
+    "title": "Work experience",
+    "type": "Full-time",
+    "caseStudy": "View case study →",
+    "optimacros": {
+      "role": "React Developer",
+      "duration": "1 yr 7 mos",
+      "location": "Moscow, Remote",
+      "bullets": {
+        "1": "Development of an integrated system for planning, budgeting, forecasting, and business analysis.",
+        "2": "Developed a UI-kit: migrated components to zag-js, configured Biome linter, set up Storybook, documented components.",
+        "3": "Wrote adapter components for smooth transition to new components.",
+        "4": "Improved build performance — bundle size reduced by 40%, migrated linting from ESLint to Biome."
+      },
+      "cs": {
+        "desc": "Participation in the development of the Optimacros CPM/IBP platform, forming an integrated environment for aligned decision-making, improving the accuracy, transparency, and efficiency of management.",
+        "desc2": "Developed features used by a large user base, including enterprise clients such as Ozon, Sibur, and other major industry leaders.",
+        "desc3": "Optimized the application build, reducing bundle size by nearly 50% — from 240.8 KB down to 122 KB — by removing unused exports and imports, enabling effective tree-shaking of lodash-es (reduced from 82.5 KB to 34.1 KB).\nMigrated linting from ESLint to Biome, achieving a 20x improvement in code check performance.",
+
+        "siteLink": "Go to the company site",
+        "slide1img": "/assets/img/optimacros/opti-2.png",
+        "slide2img": "/assets/img/optimacros/opti-4.png"
+      }
+    },
+    "datatech": {
+      "role": "React Developer",
+      "duration": "1 yr 2 mos",
+      "location": "Dubai, UAE, Remote",
+      "bullets": {
+        "1": "Built a document management system for lawyers and accountants from scratch — sole frontend developer, responsible for architecture and implementation.",
+        "2": "Designed the frontend architecture independently, from initial setup to production.",
+        "3": "Built a UX-focused interface with authentication, role-based access, and multilingual support (EN / RU / AR).",
+        "4": "Wrote unit tests across the codebase to ensure reliability and maintainability."
+      },
+      "cs": {
+        "desc": "Built a document management system for lawyers and accountants from scratch.\nSole frontend developer — responsible for architecture, authentication, role-based access, and multilingual support (EN / RU / AR).",
+        "desc2": "Worked autonomously from schema-based task specifications — independently identified gaps, collected additional context, and drove tasks to completion.",
+        "siteLink": "Go to the company site",
+        "projectTitle": "Document Management System",
+        "techStack": "TypeScript / React / Vite / Jest",
+        "person": "—",
+        "personRole": "Datatech Labs Middle East",
+        "quote": "Testimonial coming soon."
+      }
+    },
+    "zencode": {
+      "role": "React Developer",
+      "duration": "2 yrs 7 mos",
+      "location": "Penza, Russia, Remote",
+      "bullets": {
+        "1": "Developed a large MES system for managing production processes in the gold mining industry.",
+        "2": "Built the administration section of the application from scratch.",
+        "3": "Created a custom UI component library (Storybook), migrated from Rollup to Webpack, migrated tables from AntD to DevExtreme.",
+        "4": "Optimized application performance, including identifying causes of table data rendering delays."
+      },
+      "cs": {
+        "desc": "Participation in the development of projects for a gold mining company:\nA suite of tools for enterprise process integration: manufacturing execution system modules enabling control over production order fulfillment, resource consumption tracking, and equipment efficiency and utilization analysis.",
+        "desc2": "Actively participated in internal company events: tech meetups, knowledge-sharing sessions, and team activities.",
+        "siteLink": "Go to the company site",
+        "projectTitle": "Project group for a gold mining company",
+        "techStack": "TypeScript / React.JS / ES6 / JsDoc / Webpack / Eslint / Css Modules / Ant Design / DevExtreme / MobX / Redux / Storybook / Figma",
+        "person": "Alexander Nechai",
+        "personRole": "Head of RCBI Development Department",
+        "quote": "\"We have been cooperating with ZenCode for more than 4 years within the scope of activities for the development and advancement of our own MES solution, as well as its implementation at metallurgical industry enterprises. Together with colleagues, we have gone from creating an MVP to signing acceptance certificates with satisfied Clients. Along this journey, we achieved the highest level of integration and mutual understanding at the level of processes and teams. Throughout all this time, ZenCode has proven to be a reliable, engaged, and results-driven partner you can count on.\""
+      }
+    }
+  },
+  "contact": {
+    "title": "Get in touch"
+  },
+  "site": {
+    "name": "Iusupova Iuliia"
+  },
+  "footer": {
+    "built": "Built by Iuliia"
+  }
+}
