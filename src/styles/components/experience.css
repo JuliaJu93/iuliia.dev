@@ -172,8 +172,10 @@
 
 .cs-photos-row {
   display: flex;
+  flex: 1;
   gap: 0.75rem;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .cs-photo {

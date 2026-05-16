@@ -49,6 +49,7 @@
         "desc": "Participation in the development of the Optimacros CPM/IBP platform, forming an integrated environment for aligned decision-making, improving the accuracy, transparency, and efficiency of management.",
         "desc2": "Developed features used by a large user base, including enterprise clients such as Ozon, Sibur, and other major industry leaders.",
         "desc3": "Optimized the application build, reducing bundle size by nearly 50% — from 240.8 KB down to 122 KB — by removing unused exports and imports, enabling effective tree-shaking of lodash-es (reduced from 82.5 KB to 34.1 KB).\nMigrated linting from ESLint to Biome, achieving a 20x improvement in code check performance.",
+
         "siteLink": "Go to the company site",
         "slide1img": "/src/assets/img/optimacros/opti-2.png",
         "slide2img": "/src/assets/img/optimacros/opti-4.png"
@@ -86,7 +87,7 @@
         "4": "Optimized application performance, including identifying causes of table data rendering delays."
       },
       "cs": {
-        "desc": "Participation in the development of projects for a gold mining company\nTools for enterprise process integration: manufacturing execution system modules that ensure control over production order fulfillment, resource consumption tracking, as well as analysis of equipment efficiency and utilization.",
+        "desc": "Participation in the development of projects for a gold mining company:\nA suite of tools for enterprise process integration: manufacturing execution system modules enabling control over production order fulfillment, resource consumption tracking, and equipment efficiency and utilization analysis.",
         "desc2": "Actively participated in internal company events: tech meetups, knowledge-sharing sessions, and team activities.",
         "siteLink": "Go to the company site",
         "projectTitle": "Project group for a gold mining company",
