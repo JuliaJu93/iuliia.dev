@@ -1,6 +1,7 @@
 import { initTheme }    from './theme.js'
 import { initI18n }    from './i18n.js'
 import { initCarousel } from './carousel.js'
+import { initLightbox } from './lightbox.js'
 
 // Run before DOMContentLoaded to prevent theme flash
 initTheme()
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initI18n()
   initScrollReveal()
   initCaseStudyToggles()
+  initLightbox()
 
   const yearEl = document.getElementById('footer-year')
   if (yearEl) yearEl.textContent = new Date().getFullYear()

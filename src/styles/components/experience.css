@@ -184,6 +184,7 @@
   height: auto;
   display: block;
   background-color: var(--color-surface);
+  cursor: zoom-in;
 }
 
 .cs-photo--mock {

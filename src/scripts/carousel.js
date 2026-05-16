@@ -53,7 +53,7 @@ export function initCarousel(container = document) {
   let isDragging = false
 
   track.addEventListener('pointerdown', e => {
-    if (e.target.closest('a, button')) return
+    if (e.target.closest('a, button, img')) return
     dragStart = e.clientX
     isDragging = true
     track.setPointerCapture(e.pointerId)
