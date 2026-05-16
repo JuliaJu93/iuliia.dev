@@ -2,7 +2,9 @@
   "nav": {
     "about": "About",
     "experience": "Experience",
-    "contact": "Contacts"
+    "contact": "Contacts",
+    "cvEn": "CV EN",
+    "cvRu": "CV RU"
   },
   "hero": {
     "name": "Iusupova Iuliia",
