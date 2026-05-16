@@ -116,6 +116,71 @@ img, video { max-width: 100%; display: block; }
   outline-offset: 2px;
 }
 
+/* ─── Stack section ─────────────────────────────────────── */
+
+.stack__cols {
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+  align-items: flex-start;
+}
+
+.stack__col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.stack__row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.stack__category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+}
+
+.stack__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.stack__item {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.stack__item:not(:last-child)::after {
+  content: ",\00a0";
+}
+
+@media (max-width: 640px) {
+  .stack__cols {
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .stack__col + .stack__col {
+    padding-top: 0;
+  }
+
+  .stack__row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .stack__category {
+    min-width: unset;
+  }
+}
+
 /* ─── Tags ──────────────────────────────────────────────── */
 
 .tag {

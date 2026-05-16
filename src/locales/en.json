@@ -1,6 +1,7 @@
 {
   "nav": {
     "about": "About",
+    "stack": "Stack",
     "experience": "Experience",
     "contact": "Contacts",
     "cvEn": "CV EN",
@@ -27,6 +28,14 @@
       "title": "Certification",
       "issued": "Issued Feb 2026"
     }
+  },
+  "stack": {
+    "title": "Tech stack",
+    "core": "Core stack",
+    "state": "State management",
+    "ui": "UI & styling",
+    "tooling": "Tooling",
+    "ai": "AI tools"
   },
   "video": {
     "placeholder": "Video coming soon"
