@@ -4,7 +4,8 @@
     "stack": "Стек",
     "experience": "Опыт",
     "contact": "Контакты",
-    "cvRu": "Резюме"
+    "cvEn": "Резюме en",
+    "cvRu": "Резюме ru"
   },
   "hero": {
     "name": "Юсупова Юлия",

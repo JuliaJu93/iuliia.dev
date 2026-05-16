@@ -90,10 +90,6 @@
   border-color: var(--color-accent);
 }
 
-html[lang="ru"] .about__cv-link--en {
-  display: none;
-}
-
 @media (max-width: 768px) {
   .about__content {
     grid-template-columns: 1fr;

@@ -52,6 +52,10 @@
   letter-spacing: 0.03em;
 }
 
+:root:lang(en) .about__cv-link--ru {
+  display: none;
+}
+
 @media (max-width: 640px) {
   .nav__links { display: none; }
 }
