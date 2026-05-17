@@ -68,7 +68,8 @@
 
 @media (max-width: 680px) {
   .footer {
-    padding-inline: 1.25rem;
+    padding: 2.5rem 1.25rem 1.5rem;
+    min-height: auto;
   }
 
   .footer__inner {

@@ -89,4 +89,7 @@
     display: flex;
     justify-content: center;
   }
+  .hero__contacts {
+    justify-content: center;
+  }
 }

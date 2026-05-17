@@ -282,3 +282,10 @@
   padding: 0;
   font-style: normal;
 }
+
+@media (max-width: 680px) {
+  .cs-photos-row,
+  .cs-cards-row {
+    flex-direction: column;
+  }
+}

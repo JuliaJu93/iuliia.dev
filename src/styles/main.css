@@ -163,7 +163,12 @@ img, video { max-width: 100%; display: block; }
 
 @media (max-width: 680px) {
   .section {
+    padding-block: 1.75rem;
     padding-inline: 1.25rem;
+  }
+
+  .section__title {
+    margin-bottom: 1.25rem;
   }
 
   .stack__cols {
