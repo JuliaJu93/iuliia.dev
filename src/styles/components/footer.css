@@ -85,4 +85,8 @@
   .footer__contacts-col + .footer__contacts-col {
     padding-top: 0;
   }
+
+  .footer__copy {
+    margin-top: 1.5rem;
+  }
 }
