@@ -161,7 +161,11 @@ img, video { max-width: 100%; display: block; }
   content: ",\00a0";
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
+  .section {
+    padding-inline: 1.25rem;
+  }
+
   .stack__cols {
     flex-direction: column;
     gap: 0.875rem;

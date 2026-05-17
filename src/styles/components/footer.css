@@ -65,3 +65,23 @@
   color: rgba(255, 255, 255, 0.45);
   margin: 0;
 }
+
+@media (max-width: 680px) {
+  .footer {
+    padding-inline: 1.25rem;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .footer__contacts-col + .footer__contacts-col {
+    padding-top: 0;
+  }
+}
