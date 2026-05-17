@@ -72,6 +72,7 @@
           <h1 class="hero__name" data-i18n="hero.name">Iusupova Iuliia</h1>
           <p class="hero__role" data-i18n="hero.role">Frontend engineer</p>
           <p class="hero__exp" data-i18n="hero.experience">5+ years of experience</p>
+          <p class="hero__location">Porto, Portugal (GMT+1)</p>
           <div class="hero__contacts">
             <a href="mailto:kashlewa.ju@gmail.com">kashlewa.ju@gmail.com</a>
             <span aria-hidden="true">·</span>
@@ -102,13 +103,19 @@
           </p>
 
           <div class="about__cv">
-            <a href="/cv-ru.pdf" class="about__cv-link about__cv-link--ru" download="Юсупова_фронтенд.pdf">
+            <!-- EN locale: single "Download CV" button -->
+            <a href="/cv-en.docx" class="about__cv-link about__cv-link--en-only" download="Iuliia_Iusupova_CV.docx">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span data-i18n="nav.cvRu">CV RU</span>
+              <span data-i18n="nav.cvDownload">Download CV</span>
             </a>
-            <a href="/cv-en.pdf" class="about__cv-link about__cv-link--en" download="Iuliia_Iusupova_CV.pdf">
+            <!-- RU locale: two buttons -->
+            <a href="/cv-ru.docx" class="about__cv-link about__cv-link--ru-only" download="Юсупова_фронтенд.docx">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span data-i18n="nav.cvEn">CV EN</span>
+              <span data-i18n="nav.cvRuDownload">Скачать резюме (ru)</span>
+            </a>
+            <a href="/cv-en.docx" class="about__cv-link about__cv-link--en-ru" download="Iuliia_Iusupova_CV.docx">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span data-i18n="nav.cvEnDownload">Скачать резюме (en)</span>
             </a>
           </div>
 
@@ -455,12 +462,24 @@ Tools for enterprise process integration: manufacturing execution system modules
       <div class="footer__contacts">
         <div class="footer__contacts-col">
           <p class="footer__contacts-label" data-i18n="nav.contact">Contacts</p>
-          <a href="mailto:kashlewa.ju@gmail.com">kashlewa.ju@gmail.com</a>
-          <a href="https://linkedin.com/in/iuliia-iusupova" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:kashlewa.ju@gmail.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            kashlewa.ju@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/iuliia-iusupova" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
         </div>
         <div class="footer__contacts-col">
-          <a href="https://github.com/JuliaJu93" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://t.me/placeholder" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <a href="https://github.com/JuliaJu93" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://t.me/placeholder" target="_blank" rel="noopener noreferrer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2.5 2.5 9.5l7 2m12-9-5 17-5-7m5-10-12 7"/></svg>
+            Telegram
+          </a>
         </div>
       </div>
     </div>

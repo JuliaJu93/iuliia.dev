@@ -68,6 +68,13 @@
   margin-top: 1.5rem;
 }
 
+/* EN locale: show single EN button, hide RU-locale buttons */
+html[lang="en"] .about__cv-link--ru-only,
+html[lang="en"] .about__cv-link--en-ru { display: none; }
+
+/* RU locale: show both RU buttons, hide the EN-only button */
+html[lang="ru"] .about__cv-link--en-only { display: none; }
+
 .about__cv-link {
   display: inline-flex;
   align-items: center;

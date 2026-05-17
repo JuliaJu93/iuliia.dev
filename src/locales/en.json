@@ -5,7 +5,10 @@
     "experience": "Experience",
     "contact": "Contacts",
     "cvEn": "CV",
-    "cvRu": "CV RU"
+    "cvRu": "CV RU",
+    "cvDownload": "Download CV",
+    "cvEnDownload": "Download CV (en)",
+    "cvRuDownload": "Download CV (ru)"
   },
   "hero": {
     "name": "Iusupova Iuliia",

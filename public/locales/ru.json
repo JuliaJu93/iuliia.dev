@@ -5,7 +5,10 @@
     "experience": "Опыт",
     "contact": "Контакты",
     "cvEn": "Резюме en",
-    "cvRu": "Резюме ru"
+    "cvRu": "Резюме ru",
+    "cvDownload": "Скачать резюме",
+    "cvEnDownload": "Скачать резюме (en)",
+    "cvRuDownload": "Скачать резюме (ru)"
   },
   "hero": {
     "name": "Юсупова Юлия",
