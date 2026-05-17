@@ -95,10 +95,37 @@
 
 /* ─── Case study reveal ─────────────────────────────────── */
 
+.case-study-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease;
+}
+
+.case-study-wrap.is-open {
+  grid-template-rows: 1fr;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study-wrap { transition: none; }
+  .case-study__inner { transition: none !important; }
+}
+
+/* Grid item — overflow:hidden collapses min-content to 0 so the 0fr track closes fully */
 .case-study {
+  overflow: hidden;
+}
+
+/* Inner wrapper carries the visual styles and fades in */
+.case-study__inner {
   margin-top: 1.25rem;
   border-top: 1px solid var(--color-border);
   padding-top: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.05s;
+}
+
+.case-study-wrap.is-open .case-study__inner {
+  opacity: 1;
 }
 
 .case-study__img {

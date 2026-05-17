@@ -25,8 +25,8 @@ function initCaseStudyToggles() {
       const panel = targetId ? document.getElementById(targetId) : null
       if (!panel) return
 
-      const isOpen = !panel.hidden
-      panel.hidden = isOpen
+      const isOpen = panel.classList.contains('is-open')
+      panel.classList.toggle('is-open', !isOpen)
       btn.setAttribute('aria-expanded', String(!isOpen))
 
       if (!isOpen && !carouselsInited.has(targetId)) {
