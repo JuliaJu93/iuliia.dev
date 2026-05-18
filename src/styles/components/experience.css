@@ -93,6 +93,22 @@
   border-radius: 2px;
 }
 
+.case-study-toggle__arrow {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  margin-bottom: 2px;
+}
+
+.case-study-toggle[aria-expanded="true"] .case-study-toggle__arrow {
+  transform: rotate(-135deg);
+  margin-bottom: -2px;
+}
+
 /* ─── Case study reveal ─────────────────────────────────── */
 
 .case-study-wrap {
@@ -118,8 +134,9 @@
 /* Inner wrapper carries the visual styles and fades in */
 .case-study__inner {
   margin-top: 1.25rem;
-  border-top: 1px solid var(--color-border);
-  padding-top: 1.25rem;
+  border-left: 2px solid var(--color-border);
+  padding-left: 1.25rem;
+  padding-top: 0.25rem;
   opacity: 0;
   transition: opacity 0.3s ease 0.05s;
 }

@@ -14,7 +14,8 @@
     "name": "Iusupova Iuliia",
     "role": "Frontend engineer",
     "experience": "5+ years of experience",
-    "tagline": "Building scalable UIs for complex web apps"
+    "tagline": "Building scalable UIs for complex web apps",
+    "location": "Porto, Portugal (GMT+1)"
   },
   "about": {
     "title": "About me",
@@ -46,7 +47,7 @@
   "experience": {
     "title": "Work experience",
     "type": "Full-time",
-    "caseStudy": "View case study →",
+    "caseStudy": "View case study",
     "optimacros": {
       "role": "React Developer",
       "duration": "1 yr 7 mos",
