@@ -61,7 +61,7 @@
       "cs": {
         "desc": "Participation in the development of the Optimacros CPM/IBP platform, forming an integrated environment for aligned decision-making, improving the accuracy, transparency, and efficiency of management.",
         "desc2": "Developed features used by a large user base, including enterprise clients such as Ozon, Sibur, and other major industry leaders.",
-        "desc3": "Optimized the application build, reducing bundle size by nearly 50% — from 240.8 KB down to 122 KB — by removing unused exports and imports, enabling effective tree-shaking of lodash-es (reduced from 82.5 KB to 34.1 KB).\nMigrated linting from ESLint to Biome, achieving a 20x improvement in code check performance.",
+        "desc3": "Optimized the application build, reducing bundle size by nearly 50% — from 240.8 KB down to 122 KB — by removing unused exports and imports, enabling effective tree-shaking of lodash-es (reduced from 82.5 KB to 34.1 KB).\n\nMigrated linting from ESLint to Biome, achieving a 20x improvement in code check performance.",
 
         "siteLink": "Go to the company site",
         "slide1img": "/src/assets/img/optimacros/opti-2.png",
