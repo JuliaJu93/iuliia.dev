@@ -2,9 +2,11 @@ import { initTheme }    from './theme.js'
 import { initI18n }    from './i18n.js'
 import { initCarousel } from './carousel.js'
 import { initLightbox } from './lightbox.js'
+import { initAnalytics } from './analytics.js'
 
 // Run before DOMContentLoaded to prevent theme flash
 initTheme()
+initAnalytics()
 
 document.addEventListener('DOMContentLoaded', () => {
   initI18n()
