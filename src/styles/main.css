@@ -225,8 +225,11 @@ img, video { max-width: 100%; display: block; }
   object-fit: cover;
 }
 
-html[lang="ru"] .video-section__video { display: block; }
-html[lang="ru"] .video-section__placeholder { display: none; }
+html[lang="ru"] .video-section__video--ru,
+html[lang="en"] .video-section__video--en { display: block; }
+
+html[lang="ru"] .video-section__placeholder,
+html[lang="en"] .video-section__placeholder { display: none; }
 
 .video-section__placeholder {
   color: var(--color-text-muted);
