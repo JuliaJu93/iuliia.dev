@@ -15,6 +15,7 @@ export async function initI18n() {
   const toggle = document.getElementById('lang-toggle')
   if (toggle) toggle.onclick = async () => {
     const next = currentLang === 'en' ? 'ru' : 'en'
+    document.querySelectorAll('video').forEach(v => { v.pause(); v.currentTime = 0 })
     localStorage.setItem(STORAGE_KEY, next)
     await loadTranslations(next)
     applyTranslations()

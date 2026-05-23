@@ -38,11 +38,11 @@
 
 .about__cert-link {
   color: var(--color-text);
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 500;
 }
 
-.about__cert-link:hover { text-decoration: underline; }
+.about__cert-link:hover { opacity: 0.75; }
 
 .about__cert-link:focus-visible {
   outline: 3px solid var(--color-accent);
