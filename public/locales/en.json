@@ -39,7 +39,8 @@
     "state": "State management",
     "ui": "UI & styling",
     "tooling": "Tooling",
-    "ai": "AI tools"
+    "ai": "AI tools",
+    "tests": "Tests"
   },
   "video": {
     "placeholder": "Video coming soon"
